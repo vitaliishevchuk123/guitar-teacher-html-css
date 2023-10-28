@@ -1,0 +1,316 @@
+@import 'normalizes.scss'
+@import 'resets.scss'
+
+@font-face
+  font-family: 'Montserrat Regular'
+  src: url('../fonts/Montserrat-Regular.ttf')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'Montserrat Bolt'
+  src: url('../fonts/Montserrat-ExtraBold.ttf')
+  font-weight: normal
+  font-style: normal
+
+$color-blue: #3B84EF
+$color-yellow: #FBEA54
+$color-gray-background: #E8E8E8
+
+*
+  box-sizing: border-box
+
+html
+  font-family: 'Montserrat Regular'
+
+.container
+  max-width: 1140px
+  margin: 0 auto
+
+.main-section
+  position: relative
+  min-height: 800px
+  background: $color-gray-background
+  padding-top: 16px
+  overflow: hidden
+
+  &__nav-container
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    height: 103px
+    align-items: center
+
+  &__logo
+    width: 205px
+
+  &__content-container
+    display: flex
+    flex-direction: row
+    position: relative
+    justify-content: space-between
+    align-items: center
+
+  &__second-ellipse
+    position: absolute
+    right: -80px
+    top: 650px
+
+  &__left-wrapper
+    position: relative
+
+    img
+      position: relative
+      z-index: 1
+
+    .main-section__left-rectangle-blue
+      top: 30px
+      left: 100px
+      position: absolute
+      transform: rotate(-65.235deg)
+      width: 381px
+      height: 219px
+      background: $color-blue
+      border-radius: 100px
+      box-shadow: 0 4px 10px 3px rgba(0, 0, 0, 0.25)
+
+    .main-section__left-rectangle-yellow
+      top: 100px
+      left: -5px
+      position: absolute
+      transform: rotate(-34.252deg)
+      width: 554px
+      height: 219px
+      background: $color-yellow
+      border-radius: 100px
+      box-shadow: 0 4px 10px 3px rgba(0, 0, 0, 0.25)
+
+  &__right-wrapper
+    width: 372px
+    position: relative
+
+    .main-section__right-icons-box
+      margin-bottom: 1px
+      padding-bottom: 27px
+      position: relative
+      z-index: 1
+
+    .main-section__right-title
+      margin-bottom: 27px
+      z-index: 1
+
+    .main-section__right-text
+      font-size: 22px
+      margin-bottom: 27px
+      position: relative
+      z-index: 1
+
+    .main-section__right-first-ellipse
+      position: absolute
+      top: 16px
+      right: 40px
+
+.nav-menu
+  &__list
+    display: flex
+    flex-direction: row
+    a
+      color: black
+      text-decoration: none
+
+
+    &-item
+      margin-right: 69px
+      font-size: 20px
+
+      &:last-child
+        margin-right: 0
+
+.icons
+  display: inline-flex
+
+  &__item
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 40px
+    height: 40px
+    border: 1px solid $color-blue
+    border-radius: 100px
+    margin-right: 10px
+
+    &:last-child
+      margin: 0
+
+    i
+      font-size: 21px
+
+.title
+  font-size: 56px
+  position: relative
+  font-family: 'Montserrat Bolt'
+
+  &__hr
+    width: 75px
+    position: absolute
+    bottom: 0
+    margin: 0
+    border: none
+    border-top: 1px solid $color-blue
+
+.buttons
+  display: inline-flex
+
+  &__main-btn
+    width: 200px
+    height: 60px
+    border-radius: 100px
+    background: $color-blue
+    border: none
+    color: white
+    font-size: 20px
+    box-shadow: 0 4px 10px 3px rgba(0, 0, 0, 0.25)
+
+.ellipse
+  width: 170px
+  height: 170px
+  border-radius: 150px
+  background: rgba(59, 132, 239, 0.25)
+  display: flex
+  justify-content: center
+  align-items: center
+
+  &_big
+    width: 280px
+    height: 280px
+
+  &__subtract
+    width: 130px
+    height: 130px
+    background: $color-gray-background
+    border-radius: 150px
+
+    &_big
+      width: 210px
+      height: 210px
+
+    &_white
+      background: white
+
+.lessons-section
+  padding-top: 50px
+  min-height: 720px
+
+  &__container
+    position: relative
+
+  &__title
+    margin-bottom: 50px
+
+  &__cards-box
+    display: inline-flex
+    justify-content: center
+    margin-bottom: 50px
+
+  &__cards-item
+    margin-right: 34px
+
+    &:last-child
+      margin: 0
+
+  &__icons-box
+    display: flex
+    justify-content: center
+
+  &__icons-item
+    margin-right: 70px
+
+    &:last-child
+      margin: 0
+
+  &__first-ellipse
+    position: absolute
+    top: 80px
+    right: -60px
+    z-index: -1
+
+  &__second-ellipse
+    position: absolute
+    top: 364px
+    left: -60px
+    z-index: -1
+
+.cards-item
+  position: relative
+  width: 355px
+  height: 355px
+  border-radius: 30px
+  box-shadow: 0 4px 57px 3px rgba(0, 0, 0, 0.25)
+
+  &__text
+    top: 145px
+    right: 50px
+    position: absolute
+    text-align: center
+    color: $color-blue
+    font-size: 36px
+    transform: rotate(90deg)
+
+  &__img
+    height: 327px
+    position: absolute
+    left: 37px
+    bottom: 0
+
+.icons-item
+  display: inline-flex
+  align-items: center
+
+  &__img
+    height: 99px
+
+  &__text
+    font-size: 18px
+
+    span
+      font-size: 48px
+      color: $color-blue
+
+.description-section
+  padding-top: 70px
+  min-height: 620px
+  background: $color-gray-background
+
+  &__container
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    .description-section__left-wrapper
+      .description-section__img
+        height: 480px
+
+    .description-section__right-wrapper
+      max-width: 530px
+
+      .description-section__right-title
+        margin-bottom: 27px
+        .title__hr
+          bottom: 57px
+
+
+      .description-section__right-text
+        margin-bottom: 27px
+        font-size: 22px
+
+.title__hr_top
+  bottom: 54px
+
+.footer
+  &__container
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  &__title
+    margin-bottom: 20px
