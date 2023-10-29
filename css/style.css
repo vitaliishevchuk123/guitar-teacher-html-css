@@ -401,6 +401,8 @@ html {
 }
 .main-section__logo {
   width: 205px;
+  position: relative;
+  z-index: 2;
 }
 .main-section__content-container {
   display: flex;
@@ -462,6 +464,10 @@ html {
   margin-bottom: 27px;
   position: relative;
   z-index: 1;
+}
+.main-section__right-wrapper .main-section__right-button {
+  position: relative;
+  z-index: 2;
 }
 .main-section__right-wrapper .main-section__right-first-ellipse {
   position: absolute;
@@ -561,6 +567,7 @@ html {
 }
 
 .lessons-section {
+  overflow: hidden;
   padding-top: 50px;
   min-height: 720px;
 }
@@ -680,6 +687,85 @@ html {
 }
 .footer__title {
   margin-bottom: 20px;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    width: 960px;
+  }
+  .main-section {
+    min-height: 598px;
+  }
+  .main-section__left-wrapper img {
+    width: 655px;
+  }
+  .main-section__left-wrapper .main-section__left-rectangle-blue {
+    top: 28px;
+    left: 62px;
+    width: 381px;
+    height: 167px;
+  }
+  .main-section__left-wrapper .main-section__left-rectangle-yellow {
+    top: 81px;
+    left: 13px;
+    width: 498px;
+    height: 177px;
+  }
+  .main-section__second-ellipse {
+    top: 526px;
+  }
+  .main-section__right-wrapper {
+    right: -15px;
+  }
+  .cards-item {
+    width: 300px;
+    height: 300px;
+  }
+  .cards-item__img {
+    height: 275px;
+  }
+  .cards-item__text {
+    top: 119px;
+    right: 7px;
+  }
+  .lessons-section {
+    min-height: 658px;
+  }
+  .lessons-section__first-ellipse {
+    top: 30px;
+    right: -89px;
+  }
+  .lessons-section__second-ellipse ellipse {
+    top: 307px;
+    left: -93px;
+  }
+  .lessons-section__icons-item {
+    margin-right: 0;
+  }
+  .description-section__container .description-section__right-wrapper {
+    max-width: 474px;
+  }
+  .footer__container {
+    justify-content: space-around;
+  }
+  .footer__container .footer__img {
+    width: 466px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    width: 540px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
