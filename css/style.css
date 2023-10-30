@@ -485,7 +485,7 @@ html {
 }
 .nav-menu__list-item {
   margin-right: 69px;
-  font-size: 20px;
+  font-size: 22px;
 }
 .nav-menu__list-item:last-child {
   margin-right: 0;
@@ -891,7 +891,27 @@ html {
     width: 540px;
   }
   .nav-menu {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    background: #3B84EF;
+    width: 50%;
+    z-index: 20;
+    transition: 0.6s all;
+  }
+  .nav-menu__list {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+  }
+  .nav-menu__list-item {
+    font-family: "Montserrat Bolt";
+    margin: 0;
+  }
+  .nav-menu_active {
+    right: 0;
   }
   .hamburger {
     width: 30px;
@@ -899,6 +919,7 @@ html {
     top: 40px;
     right: 30px;
     height: 14px;
+    z-index: 30;
   }
   .hamburger span {
     height: 2px;
@@ -906,22 +927,119 @@ html {
     display: block;
     background: black;
     margin-bottom: 4px;
-    transition: 1s all;
+    transition: 0.6s all;
   }
   .hamburger span:last-child {
     margin-bottom: 0;
   }
-  .hamburger-active span {
+  .hamburger_active span {
     margin-bottom: -2px;
   }
-  .hamburger-active span:nth-child(1) {
+  .hamburger_active span:nth-child(1) {
     transform: translateY(3px) rotate(-45deg);
   }
-  .hamburger-active span:nth-child(2) {
+  .hamburger_active span:nth-child(2) {
     display: none;
   }
-  .hamburger-active span:nth-child(3) {
+  .hamburger_active span:nth-child(3) {
     transform: translateY(3px) rotate(45deg);
+  }
+  .main-section {
+    min-height: 429px;
+  }
+  .main-section__logo {
+    width: 122px;
+  }
+  .main-section__left-wrapper img {
+    width: 325px;
+  }
+  .main-section__left-wrapper .main-section__left-rectangle-blue {
+    top: 34px;
+    left: 7px;
+    width: 171px;
+    height: 74px;
+  }
+  .main-section__left-wrapper .main-section__left-rectangle-yellow {
+    top: 49px;
+    left: -1px;
+    width: 213px;
+    height: 70px;
+  }
+  .main-section__right-wrapper {
+    right: 15px;
+  }
+  .main-section__right-wrapper .main-section__right-first-ellipse {
+    top: 9px;
+    right: -27px;
+  }
+  .main-section__right-wrapper .main-section__right-text {
+    font-size: 16px;
+  }
+  .main-section__second-ellipse {
+    top: 317px;
+    right: -119px;
+  }
+  .title {
+    font-size: 38px;
+  }
+  .buttons__main-btn {
+    width: auto;
+    height: auto;
+    padding: 0.5em 1em;
+    font-size: 16px;
+  }
+  .lessons-section__cards-box {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+  .lessons-section__cards-item {
+    margin-right: 0;
+    margin-bottom: 34px;
+  }
+  .lessons-section__cards-item:last-child {
+    margin-bottom: 0;
+  }
+  .lessons-section__cards-item:nth-child(1) {
+    margin-right: 34px;
+  }
+  .lessons-section__title {
+    margin-left: 1rem;
+  }
+  .lessons-section__icons-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    margin: 10%;
+  }
+  .description-section {
+    padding-top: 35px;
+    margin-bottom: 20px;
+    min-height: 398px;
+  }
+  .description-section__container {
+    justify-content: center;
+  }
+  .description-section__container .description-section__left-wrapper {
+    display: none;
+  }
+  .description-section__container .description-section__left-wrapper .description-section__img {
+    display: none;
+  }
+  .description-section__container .description-section__right-wrapper {
+    max-width: 424px;
+  }
+  .description-section__container .description-section__right-wrapper .description-section__right-title .title__hr {
+    bottom: 0;
+  }
+  .footer {
+    min-height: 154px;
+  }
+  .footer .footer__container .footer__img {
+    width: 188px;
+  }
+  .footer .footer__container .title__hr_top {
+    bottom: 39px;
   }
 }
 @media (max-width: 576px) {
