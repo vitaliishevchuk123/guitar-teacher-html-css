@@ -910,6 +910,9 @@ html {
     font-family: "Montserrat Bolt";
     margin: 0;
   }
+  .nav-menu__list-item a {
+    color: white;
+  }
   .nav-menu_active {
     right: 0;
   }
@@ -1045,6 +1048,36 @@ html {
 @media (max-width: 576px) {
   .container {
     width: 100%;
+  }
+  .nav-menu {
+    width: 70%;
+  }
+  .main-section__left-wrapper {
+    display: none;
+  }
+  .main-section {
+    min-height: 371px;
+  }
+  .main-section__right-wrapper {
+    max-width: 320px;
+    left: 0;
+    margin: 0 auto;
+  }
+  .main-section__second-ellipse {
+    top: 277px;
+    right: -119px;
+  }
+  .lessons-section__cards-item:nth-child(1) {
+    margin-right: 0;
+  }
+  .description-section {
+    padding-top: 0;
+    max-width: 100%;
+    min-height: auto;
+  }
+  .description-section .description-section__right-wrapper {
+    max-width: 100%;
+    margin: 10%;
   }
 }
 
