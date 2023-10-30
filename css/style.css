@@ -941,6 +941,7 @@ html {
   }
   .hamburger_active span {
     margin-bottom: -2px;
+    background: white;
   }
   .hamburger_active span:nth-child(1) {
     transform: translateY(3px) rotate(-45deg);
