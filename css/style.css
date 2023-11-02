@@ -923,11 +923,12 @@ html {
     right: 0;
   }
   .hamburger {
-    width: 30px;
+    padding: 0.5em;
+    width: 3em;
     position: absolute;
     top: 40px;
     right: 30px;
-    height: 14px;
+    height: auto;
     z-index: 30;
   }
   .hamburger span {
