@@ -10,7 +10,8 @@ window.addEventListener('DOMContentLoaded', () => {
         bodyElement.classList.toggle('overflow-hidden');
     }
 
-    hamburger.addEventListener('click', () => {
+    hamburger.addEventListener('click', (e) => {
+        e.preventDefault()
         toggleMenu();
     });
 
@@ -22,7 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Додамо обробник кліку для закриття меню при кліку поза ним
     document.addEventListener('click', (event) => {
-        if (menu.classList.contains('nav-menu_active') && event.target !== hamburger && !menu.contains(event.target)) {
+        if (menu.classList.contains('nav-menu_active') && event.target !== hamburger && !hamburger.contains(event.target) && !menu.contains(event.target)) {
             toggleMenu();
         }
     });
